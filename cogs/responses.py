@@ -16,6 +16,6 @@ class Responses(commands.Cog):
     async def ping(self, ctx):
         await ctx.send(f'pong')
 
-def setup(client):
-	client.add_cog(Responses(client))
+def setup(bot):
+	bot.add_cog(Responses(bot))
         

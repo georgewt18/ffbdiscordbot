@@ -17,7 +17,7 @@ logger.addHandler(handler)
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-with open('players.json') as f:
+with open('./data/players.json') as f:
     try:
         all_players = json.load(f)
     except Exception as e:
